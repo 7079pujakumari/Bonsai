@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100vh;
+    width: 100vw;
+}
+nav{
+    height: 80px;
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: space-around;
+   
+    
+}
+.logo_box{
+    height: 100%;
+    width: 220px;
+    /* border: 3px solid red;  */
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo{
+    height: 100%;
+    width: 80px;
+    /* border: 3px solid; */
+    background-image: url(logoimg.png);
+}
+.logo_name{
+    height: 100%;
+    width: 130px;
+    /* border: 3px solid; */
+    letter-spacing: 5px;
+    font-size: 2rem;
+    line-height: 70px;
+    color: #00b289;
+}
+.nav_links{
+    height: 100%;
+    width: 500px;
+    /* border: 3px solid; */
+}
+.nav_button{
+    height: 100%;
+    width: 300px;
+    /* border: 3px solid; */
+}
+a{
+    line-height: 70px;
+    color: black;
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 20px;
+}
+.login_btn{
+    height: 40px;
+    width: 70px;
+    border: 3px solid #00b289;
+    color: #00b289;
+    background-color: #ffff;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+.start_btn{
+    height: 40px;
+    width: 100px;
+    /* border: 3px solid; */
+    margin-left: 30px;
+    margin-top: 15px;
+    background-color: #00b289;
+    border: none;
+    color: #ffff;
+}
+.login_btn:hover{
+    background-color:#00b289 ;
+    color: white;
+}
+button:active{
+    transform: scale(0.96);
+} 
+
+header{
+    height: 150%;
+    /* border: 3px solid blue; */
+}
+.header_name{
+    height: 15%;
+    width: 100%;
+    /* border: 3px solid red; */
+  }
+.container{
+    height: 85%;
+    /* border: 3px solid pink; */
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+.container_left{
+    height: 100%;
+    width: 30%;
+    border: 3px solid rgb(189, 186, 186); 
+  
+}
+.container_center{
+    height: 100%;
+    width: 30%;
+    border: 3px solid rgb(161, 161, 161);
+    position: relative;
+    overflow: hidden;
+}
+.container_right{
+    height: 100%;
+    width: 30%;
+    border: 3px solid rgb(158, 155, 155);
+}
+.header_heading{
+    height: 50px;
+    width: 20%;
+    /* border: 2px solid; */
+    text-align: center;
+    float: left;
+    margin-left: 25%;
+    margin-top: 40px;
+}
+.header_month{
+    height: 50px;
+    width: 10%;
+    /* border: 2px solid; */
+    float: left;
+    padding-top: 15px;
+    padding-left: 60px;
+    margin-top: 40px;
+}
+.of_btn{
+    height: 50px;
+    width: 20%;
+    /* border: 2px solid; */
+    text-align: center;
+    float: left;
+    padding: 15px;
+    margin-top: 40px;
+    position: relative;
+}
+.box{
+    height: 28px;
+    width: 32%;
+    /* border: 2px solid; */
+    margin-top: -8px;
+    border-radius: 25px;
+    margin-left: -15px;
+    background-color: #00b289;
+
+}
+.year{
+    /* border: 2px solid; */
+    height: 55px;
+    width: 60%;
+    margin-left: 55px;
+    margin-top: -60px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    line-height: 30px;
+    font-size: 12px;
+    color: #00b289;
+}
+.yearly{
+    font-size: 18px;
+    position: absolute;
+    left: 115px;
+    top: 14px;
+    color: rgb(87, 87, 87);
+    font-weight: 800;
+    /* display: block; */
+}
+.circle{
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    /* border: 2px solid red; */
+    margin-top: 5px;
+    margin-left: 5px;
+    background-color: white;
+   
+}
+
+.container_heading{
+    height: 25%;
+    width: 100%;
+    /* border: 2px solid; */
+}
+span{
+    font-size: 2.2rem;
+    
+}
+sup{
+    font-size: 2rem;
+}
+sub{
+    font-size: 1.5rem;
+}
+.container_containt{
+    text-align: justify;
+    margin-left:  30px;
+    margin-top: 30px;
+   
+}
+.container_containt_para{
+    text-align: justify;
+    margin-left:  30px;
+    margin-top: 5px;
+}
+.container_containt,h1{
+    margin-left: -68px;
+}
+.start{
+    margin-left: -130px;
+}
+.buss{
+    margin-left: -120px;
+}
+hr{
+    color: #00b289;
+    width: 90%;
+}
+.container_text{
+    height: 40px;
+    width: 250px;
+    /* border: 3px solid; */
+    border-radius: 5px;
+    rotate: 50deg;
+    position: absolute;
+    text-align: center;
+    top: 45px;
+    left: 185px;
+    font-size: 18px;
+    padding-top: 9px;
+    background-color: #00b289;
+    color: white;
+}
+.containt_point{
+    height: 400px;
+    width: 100%;
+    margin-top: -30px;
+    /* border: 2px solid; */
+}
+.containt_point1{
+    height: 400px;
+    width: 100%;
+    /* border: 2px solid; */
+    position: absolute;
+    top: 175px;
+    left: -1px;
+}
+.container_point{
+   height: 40px;
+   width: 100%;
+   /* border: 2px solid; */
+   padding-left: 20px;
+
+}
+i{
+    color: #00b289;
+    margin-left: 10px;
+ 
+}
+.container_btn{
+    height: 130px;
+    /* border: 2px solid red; */
+}
+.container1_btn{
+    height: 130px;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 580px;
+    left: -1px;
+    width: 100%;
+}
+.start_btn1{
+    height: 40px;
+    width: 230px;
+    /* border: 3px solid; */
+    margin-left: 60px;
+    margin-top: 30px;
+    background-color: #00b289;
+    border: none;
+    color: #ffff;
+    border-radius: 3px;
+}
+
+.icon_arrow{
+    width: 40px;
+    height: 40px;
+    /* border: 2px solid #000; */
+    position: absolute;
+    left: 69%;
+    top: 110px;
+    color: #00b289;
+    font-size: 50px;
+    opacity: 0.4;
+    font-weight: 300;
+}
+section{
+    height: 100%;
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.section_heading{
+    height: 10%;
+    width: 70%;
+    /* border: 2px solid; */
+}
+.section,h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 10px;
+    color: #4c4d5f;
+}
+.section_content{
+    height: 25%;
+    width: 70%;
+    border: 2px solid #4c4d5f;
+    color: #4c4d5f;
+    display: flex;
+}
+.section_content_para{
+    width: 75%;
+    /* border: 1px solid red; */
+}
+.section_content_price{
+    width: 25%;
+    /* border: 2px dashed red; */
+}
+.section,h4{
+    color: #4c4d5f;
+    font-size: 1.5rem;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.para{
+    color: #4c4d5f;
+    margin-left: 40px;
+    margin-top: 8px;
+}
+.icon_up{
+    color:#00b289;
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: 8px;
+}
+.section,h2{
+    margin-left: 60px;
+    margin-top: 50px;
+    font-size: 2rem;
+}
+main{
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main_content{
+    width: 60%;
+    height: 35%;
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dcdcfa;
+    border-radius: 10px;
+
+}
+.main_content_para{
+    width: 70%;
+    font-size: 2.2rem;
+    line-height: 1.4;
+}
+#your{
+    color: #00b289;
+}
+.main_content_btn button{
+    height: 50px;
+    width: 130px;
+    background-color: #00b289;
+    border: none;
+    border-radius: 8px;
+    color: #ffff;
+     
+}
+.main_box{
+    height: 55%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px solid blue; */
+}
+.main_box_text{
+    height:60px;
+    /* border: 2px solid green; */
+}
+.main_box_text h3{
+    text-align: center;
+    line-height:60px;
+    color: #00b289;
+    font-size: 2rem;
+}
+.main_box_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* border: 2px solid greenyellow; */
+}
+.main_box_content :hover{
+    color: #00b289;
+    text-decoration: none;
+}
+.main_box_icon{
+    width: 10%;
+    font-size: 1.8rem;
+    /* border: 2px solid red; */
+}
+footer{
+    height: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer_product{
+    /* border: 2px solid; */
+    width: 25%;
+    height: 100%;
+}
+h5{
+   font-size: 1rem;
+   margin-top: 20px;
+}
+h6{
+   font-size: 0.7rem;
+   margin-top: 15px;
+   color: #4c4d5f;
+
+}
+.price{
+    color: #00b289;
+    margin-top: 40px;
+}
+.temp{
+    margin-top: 35px;
+    font-size: 1rem;
+    color: black;
+}
+.affiliates{
+    margin-top: 40px;
+}
+.compare{
+    margin-top: 30px;
+}
+
+
+
+</style>
+<body>
+<nav>
+   <div class="logo_box"><div class="logo"></div>
+   <div class="logo_name">bonsai</div></div>
+    <div class="nav_links">
+        <a href="">Product<i class="ri-arrow-down-s-line"></i></a>
+        <a href="">Templets<i class="ri-arrow-down-s-line"></i></a>
+        <a href="">Pricing</a>
+        <a href="">Reviews</a>
+    </div>
+    <div class="nav_button">
+        <button class="login_btn">Log in</button>
+        <button class="start_btn">Start Free</button>
+    </div>
+</nav> 
+<header>
+<div class="header_name">
+    <div class="header_heading"><h1>Plans & Pricing</h1></div>
+    <div  class="header_month">Monthly</div>
+    <div class="of_btn"><div class="box"><div class="circle"></div></div><div class="year">2 MONTHS FREE!</div>
+    <div class="yearly">Yearly</div></div>
+    <div class="icon_arrow">
+        <i class="ri-arrow-go-back-line"></i>
+    </div>   
+</div>
+<div class="container">
+    <div class="container_left">
+        <div class="container_heading">
+            <div class="container_containt"><h1 class="start">Starter</h1></div>
+             <div class="container_containt_para"><p>Ideal for freelancers and contractors <br>just starting out.</p>
+            <p><sup>$</sup><span>24</span><sub>/MONTH</sub></p><hr></div></div>
+           <div class="containt_point"> 
+           <div class="container_point"><i class="ri-check-line"></i> &nbsp; All Templates</div>
+           <div class="container_point"><i class="ri-check-line"></i>  &nbsp; Unlimited Clients & Projects</div>
+           <div class="container_point"><i class="ri-check-line"></i>   &nbsp;Invoicing & Payments</div>
+           <div class="container_point"><i class="ri-check-line"></i>   &nbsp;Proposals & Contracts</div>
+           <div class="container_point"><i class="ri-check-line"></i>   &nbsp;Tasks & Time Tracking</div>
+           <div class="container_point"><i class="ri-check-line"></i>  &nbsp; Client CRM</div>
+           <div class="container_point"><i class="ri-check-line"></i>  &nbsp; Expense Tracking</div>
+           <div class="container_point"><i class="ri-check-line"></i>  &nbsp; Up to 5 Project Collaborators</div></div>
+           <div class="container_btn"><button class="start_btn1">START FREE</button></div>
+        </div>
+        <div class="container_center">  
+        <div class="container_text">MOST POPULAR</div>
+        <div class="container_heading">
+        <div class="container_containt"><h1>Professional</h1></div>
+        <div class="container_containt_para"><p>Everything a growing independent <br> business needs to thrive.</p>
+        <p><sup>$</sup><span>39</span><sub>/MONTH</sub></p><hr>
+        <div class="containt_point1"> 
+        <div class="container_point"><i class="ri-check-line"></i> &nbsp;Everything in Starter plus...</div>
+        <div class="container_point"><i class="ri-check-line"></i> &nbsp;Custom Branding</div>
+        <div class="container_point"><i class="ri-check-line"></i> &nbsp;Forms & Questionnaires</div>
+        <div class="container_point"><i class="ri-check-line"></i> &nbsp;Workflow Automations</div>
+        <div class="container_point"><i class="ri-check-line"></i> &nbsp;Client Portal</div>
+        <div class="container_point"><i class="ri-check-line"></i> &nbsp;QuickBooks Integration</div>
+        <div class="container_point"><i class="ri-check-line"></i> &nbsp;Calendly Integration</div>
+        <div class="container_point"><i class="ri-check-line"></i> &nbsp;Zapier Integration</div>
+        <div class="container_point"><i class="ri-check-line"></i> &nbsp;Up to 15 Project Collaborators</div>
+        </div>
+        <div class="container1_btn"><button class="start_btn1">START FREE</button></div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="container_right">
+        <div class="container_heading">
+        <div class="container_containt"><h1 class="buss">Business</h1></div>   
+        <div class="container_containt_para"><p>The perfect package for small <br> businesses and agencies.</p>
+        <p><sup>$</sup><span>79</span><sub>/MONTH</sub></p><hr></div></div>
+        <div class="containt_point"> 
+        <div class="container_point"><i class="ri-check-line"></i> &nbsp;Everything in Starter and  &<br> &nbsp; &nbsp; &nbsp; &nbsp;Professional plus...</div>
+        <div class="container_point"><i class="ri-check-line"></i> &nbsp;Subcontractor Management</div>
+        <div class="container_point"><i class="ri-check-line"></i> &nbsp;Hiring Agreement Templates (1099 <br> &nbsp; &nbsp; &nbsp; &nbsp;contracts)</div>
+        <div class="container_point"><i class="ri-check-line"></i> &nbsp;Subcontractor Onboarding</div>
+        <div class="container_point"><i class="ri-check-line"></i> &nbsp;Talent Pool</div>
+        <div class="container_point"><i class="ri-check-line"></i> &nbsp;3 Team Seats (additional seats $9/ <br> &nbsp; &nbsp; &nbsp;month)</div>
+        <div class="container_point"><i class="ri-check-line"></i> &nbsp;Accountant Access</div>
+        <div class="container_point"><i class="ri-check-line"></i> &nbsp;Connect Multiple Bank Accounts</div>
+        <div class="container_point"><i class="ri-check-line"></i> &nbsp;Unlimited Subcontractors</div>
+        <div class="container_point"><i class="ri-check-line"></i> &nbsp;Unlimited Project Collaborators</div>
+        </div>
+        <div class="container_btn"><button class="start_btn1">START FREE</button></div>
+        </div>
+    </div>
+</div>
+</header>
+<section>
+    <div class="section_heading"><h1>Super charge your work with add-ons</h1></div>
+    <div class="section_content">
+        <div class="section_content_para">
+            <h4>Collaborators</h4>
+            <p class="para">Invite other users to specific projects for limited access and functionality.</p>
+        </div>
+        <div class="section_content_price">
+            <h2>Free</h2>
+        </div>
+    </div>
+    <div class="section_content">
+        <div class="section_content_para">
+            <h4>Partners</h4>
+            <p class="para">Invite other users for full account access and company management.</p>
+        </div>
+        <div class="section_content_price">
+            <h2><b>$9</b><br>/month</h2>
+        </div>
+    </div>
+    <div class="section_content">
+        <div class="section_content_para">
+            <h4>Bonsai Tax</h4>
+            <p  class="para">Track expenses, identify write-offs, and estimate quarterly taxes easily.</p>
+            <div class="icon_up"><b>LEARN MORE<i class="ri-arrow-drop-right-line"></i></b></div>
+        </div>
+        <div class="section_content_price">
+            <h2><b>$10</b><br>/month</h2></div>
+    </div>
+</section>
+<main>
+    <div class="main_content">
+        <div class="main_content_para">
+            <p>It's <span id="your">your</span> business. <br>We're here to help it grow.</p>
+        </div>
+        <div class="main_content_btn">
+            <a href=""><button>START FREE</button></a>
+        </div>
+    </div>
+    <div class="main_box">
+        <div class="main_box_text">
+            <h3>Frequently Asked Questions</h3>
+        </div>
+        <div class="main_box_content">
+            <div class="main_box_para">
+                <h4>How Does the free trial work?</h4>
+            </div>
+            <div class="main_box_icon">
+                <i class="ri-arrow-down-s-line"></i>
+            </div>
+        </div>
+        <div class="main_box_content">
+            <div class="main_box_para">
+                <h4>Can I change plan anytime?</h4>
+            </div>
+            <div class="main_box_icon">
+                <i class="ri-arrow-down-s-line"></i>
+            </div>
+        </div>
+        <div class="main_box_content">
+            <div class="main_box_para">
+            <h4>How do I pause my Bonsai Subscription?</h4>
+            </div>
+            <div class="main_box_icon">
+                <i class="ri-arrow-down-s-line"></i>
+            </div>
+        </div>
+        <div class="main_box_content">
+            <div class="main_box_para">
+                <h4>What is your refund policy?</h4>
+            </div>
+            <div class="main_box_icon">
+                <i class="ri-arrow-down-s-line"></i>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer_product">
+        <h5>PRODUCT</h5>
+        <h6>Proposals</h6>
+        <h6>Contracts</h6>
+        <h6>Invoicing</h6>
+        <h6>Client CRM</h6>
+        <h6>Time Tracking</h6>
+        <h6>Task Tracking</h6>
+        <h6>Forms</h6>
+        <h6>Accounting</h6>
+        <h6>Bonsai Tax</h6>
+        <h6>Bonsai Cash</h6>
+        <h6 class="price">Pricing</h6>
+        <h6>Bonsai Reviews</h6>
+    </div>
+
+    <div class="footer_product">
+        <h5>FREE RESOURCES</h5>
+        <h6>Freelance Resources</h6>
+        <h6>Freelance Blog by Bonsai</h6>
+        <h6>How to Write a Contract</h6>
+        <h6>Online Signature Maker</h6>
+        <h6>Self-Employed Taxes Hub</h6>
+        <h6>Self-Employed Tax Calculator</h6>
+        <h6>Self-Employed Tax Deductions</h6>
+        <h6 class="temp">Templates</h6>
+        <h6>Invoice Template<i class="ri-arrow-down-wide-fill"></i></h6>
+        <h6>Proposal Templates<i class="ri-arrow-down-wide-fill"></i></h6>
+        <h6>Contract Templates<i class="ri-arrow-down-wide-fill"></i></h6>
+        <h6>Agreement Templates<i class="ri-arrow-down-wide-fill"></i></h6>
+        <h6>Scope of Work Templates<i class="ri-arrow-down-wide-fill"></i></h6>
+        <h6>Quote Templates<i class="ri-arrow-down-wide-fill"></i></h6>
+        <h6>Credit Note Templates</h6>
+        <h6>Estimate Templates</h6>
+        <h6>Form Templates</h6>
+    </div>
+    <div class="footer_product">
+        <h5>BONSAI</h5>
+        <h6>About</h6>
+        <h6>Careers</h6>
+        <h6>Support</h6>
+        <h6>LinkedIn</h6>
+        <h6>Twitter</h6>
+        <h6>Privacy policy</h6>
+        <h6>Legal</h6>
+        <h6 class="affiliates"> Affiliates</h6>
+       <h6> Write for Us</h6>
+       <h6 class="compare">Comparisons<i class="ri-arrow-down-wide-fill"></i></h6>
+    </div>
+
+</footer>
+
+
+</body>
+</html>
